@@ -1,0 +1,4 @@
+# Mounted configuration. Example: https://github.com/verdaccio/docker-examples/blob/master/docker-local-storage-volume/conf/config.yaml
+app/conf
+# Mounted local storage
+app/storage

@@ -1,0 +1,14 @@
+# https://github.com/verdaccio/docker-examples
+version: '3'
+
+services:
+  npm-registry:
+    container_name: npm.registry
+    image: verdaccio/verdaccio
+    restart: unless-stopped
+    ports:
+      - 4873:4873
+    volumes:
+      - ${PWD}/app/conf:/verdaccio/conf
+      - ${PWD}/app/storage:/verdaccio/storage
+      - ${PWD}/app/plugins:/verdaccio/plugins
