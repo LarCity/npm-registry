@@ -37,7 +37,7 @@ uplinks:
 packages:
   '@larcity/*':
     access: $anonymous
-    publish: $anonymous
+    publish: $authenticated
 
   '@*/*':
     # scoped packages
