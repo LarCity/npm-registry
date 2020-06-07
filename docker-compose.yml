@@ -9,6 +9,6 @@ services:
     ports:
       - 4873:4873
     volumes:
-      - ${PWD}/app/conf:/verdaccio/conf
-      - ${PWD}/app/storage:/verdaccio/storage
-      - ${PWD}/app/plugins:/verdaccio/plugins
+      - ./app/conf:/verdaccio/conf
+      - ./app/storage:/verdaccio/storage
+      - ./app/plugins:/verdaccio/plugins
